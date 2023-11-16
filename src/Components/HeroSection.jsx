@@ -1,18 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Typical from "react-typical";
-import profilePic from "../assets/profile-pic.jpg";
-import jar from "../assets/jar.gif";
-import { useState, useEffect } from "react";
-import { Parallax } from "react-scroll-parallax";
-import {
-	MainContainer,
-	AboutMeContainer,
-	ImageContainer,
-	MyImage,
-	GreetingHeader,
-	GreetingText,
-} from "./STYLED/Styled";
+import { MainContainer, GreetingHeader } from "./STYLED/Styled";
 
 const HeroSectionGlassContainer = styled.div`
 	width: 80%;
@@ -23,16 +11,6 @@ const HeroSectionGlassContainer = styled.div`
 `;
 
 const HeroSection = () => {
-	const [animationCount, setAnimationCount] = useState("down");
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setAnimationCount((prev) => (prev === "up" ? "down" : "up"));
-		}, 3000);
-
-		return () => {
-			clearInterval(interval);
-		};
-	}, []);
 	return (
 		<MainContainer className="heroSectionContainer" bg={"1"}>
 			<div
