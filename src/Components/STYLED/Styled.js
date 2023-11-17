@@ -32,6 +32,11 @@ const TechStackInfoText = styled.p`
 	height: 50px;
 	text-align: center;
 	line-height: 50px;
+	&:hover {
+		background-color: #2c2c2e;
+		transition: 0.5s;
+		scale: 1.1;
+	}
 `;
 
 const AboutMeContainer = styled.div`
